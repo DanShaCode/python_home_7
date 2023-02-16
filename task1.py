@@ -102,3 +102,15 @@
 # list_3.append(list_2)
 
 # print(list_3)
+
+user_data = [['Danis', 'Sharipov'], ['Anna','Sharipova']]
+
+print()
+x = input("Введите данные для поиска: ")
+
+for user in user_data:
+    for data in user:
+        if x in data:
+            print(user)
+
+

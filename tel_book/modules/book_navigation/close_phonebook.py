@@ -6,8 +6,5 @@ from modules.user_operations.new_user import *
 from modules.user_operations.find_user import *
 from modules.user_operations.show_users import *
 
-os.system('cs||clear')
-
-user_data = []
-
-menu(user_data)
+def close_phonebook():
+    os.system('cs||clear')
