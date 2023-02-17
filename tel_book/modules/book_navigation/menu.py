@@ -13,20 +13,25 @@ def menu(user_data):
     print()
     print("(1) Добавить нового пользователя")
     print()
-    print("(2) Найти пользователя")
+    print("(2) Изменить пользователя")
+    print()  
+    print("(3) Найти пользователя")
     print()   
-    print("(3) Посмотреть список контактов")
+    print("(4) Посмотреть список контактов")
     print()
     print("(9) Закрыть справочник")
     print()
     user_input = int(input("Введите в поле соответствующую цифру из меню: "))
     if user_input == 1:
-        user_changes = new_user_data(user_data)
-        return menu(user_changes)
+        user_data = new_user_data(user_data)
+        return menu(user_data)
     if user_input == 2:
-        user_search(user_data)
+        user_data = user_change(user_data)
         return menu(user_data)
     if user_input == 3:
+        user_data = user_search(user_data)
+        return menu(user_data)
+    if user_input == 4:
         user_show(user_data)
         return menu(user_data)
     if user_input == 9:
