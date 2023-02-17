@@ -5,7 +5,7 @@ from modules.book_navigation.close_phonebook import *
 from modules.user_operations.new_user import *
 from modules.user_operations.find_user import *
 from modules.user_operations.show_users import *
-from modules.data_operations.add_data import *
+from modules.data_operations.add_data_CSV import *
 
 def new_user_data(user_data):
     os.system('cs||clear')
@@ -30,6 +30,10 @@ def new_user_data(user_data):
 
     user_mail = input("Введите е-mail: ")
     user_info.append(user_mail)
+    print()
+
+    user_adress = input("Введите адрес: ")
+    user_info.append(user_adress)
     print()
 
     user_data.append(user_info)

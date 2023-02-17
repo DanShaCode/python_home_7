@@ -5,7 +5,7 @@ from modules.book_navigation.close_phonebook import *
 from modules.user_operations.new_user import *
 from modules.user_operations.find_user import *
 from modules.user_operations.show_users import *
-from modules.data_operations.add_data import *
+from modules.data_operations.add_data_CSV import *
 
 def user_search(user_data):
     os.system('cs||clear')
@@ -27,5 +27,3 @@ def user_search(user_data):
         return user_data
     else:
         return user_data
-
-

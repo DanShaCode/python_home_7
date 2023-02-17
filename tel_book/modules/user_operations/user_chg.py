@@ -6,7 +6,7 @@ from modules.book_navigation.close_phonebook import *
 from modules.user_operations.new_user import *
 from modules.user_operations.find_user import *
 from modules.user_operations.show_users import *
-from modules.data_operations.add_data import *
+from modules.data_operations.add_data_CSV import *
 
 def user_change(user_data):
     os.system('cs||clear')
@@ -57,6 +57,14 @@ def user_change(user_data):
                             return user_data
                         if user_input == '5':
                             os.system('cs||clear')
+                            change = str(input("Введите новый Адрес: "))
+                            print()
+                            print("Изменения сохранены")
+                            time.sleep(1)
+                            id[5] = change
+                            return user_data
+                        if user_input == '6':
+                            os.system('cs||clear')
                             print()
                             print("Контакт удален")
                             time.sleep(1)
@@ -82,7 +90,9 @@ def chg_menu():
     print()
     print("(4) Изменить e-mail")
     print()
-    print("(5) Удалить контакт")
+    print("(5) Изменить Адрес")
+    print() 
+    print("(6) Удалить контакт")
     print()   
     print("(q) Выход из Меню")
     print()                                        
