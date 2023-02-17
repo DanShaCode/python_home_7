@@ -5,6 +5,7 @@ from modules.book_navigation.close_phonebook import *
 from modules.user_operations.new_user import *
 from modules.user_operations.find_user import *
 from modules.user_operations.show_users import *
+from modules.data_operations.add_data import *
 
 def new_user_data(user_data):
     os.system('cs||clear')
@@ -15,19 +16,19 @@ def new_user_data(user_data):
     uniqe_id  = str(len(user_data) + 1)
     user_info.append(uniqe_id)
 
-    user_first = input("Введите Ваше Имя: ")
+    user_first = input("Введите Имя: ")
     user_info.append(user_first)
  
     print()
-    user_second = input("Введите Вашу Фамилию: ")
+    user_second = input("Введите Фамилию: ")
     user_info.append(user_second)
     print()
 
-    user_tel = input("Введите Ваш телефон: ")
+    user_tel = input("Введите Телефон: ")
     user_info.append(user_tel)
     print()
 
-    user_mail = input("Введите Ваш е-mail: ")
+    user_mail = input("Введите е-mail: ")
     user_info.append(user_mail)
     print()
 

@@ -220,12 +220,3 @@ import os
 # res = list(filter(lambda x: x % 10 == 5, data))
 
 # print(res)
-
-
-my_list = [['1', 'danis'],['2', 'anna']]
-print(my_list)
-
-for i in my_list:
-    my_list.remove(i)
-
-print(my_list)
