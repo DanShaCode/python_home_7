@@ -9,7 +9,11 @@ from modules.user_operations.show_users import *
 def menu(user_data):
     os.system('cs||clear')
     print()
-    print("Телефонный справочник")
+    print("  -= Телефонный справочник =-")
+    print()
+    print("         ОСНОВНОЕ МЕНЮ")
+    print()
+    print("=================================")
     print()
     print("(1) Добавить нового пользователя")
     print()
@@ -20,6 +24,8 @@ def menu(user_data):
     print("(4) Посмотреть список контактов")
     print()
     print("(9) Закрыть справочник")
+    print()
+    print('----------------------------------')
     print()
     user_input = int(input("Введите в поле соответствующую цифру из меню: "))
     if user_input == 1:

@@ -10,6 +10,8 @@ from modules.user_operations.user_chg import *
 def user_search(user_data):
     os.system('cs||clear')
     print()
+    print("Для того, чтобы вывести все контакты просто нажимте Enter")
+    print()
     find_input = str(input("Введите данные пользователя: "))
     print()
     for user in user_data:
