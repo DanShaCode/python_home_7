@@ -17,7 +17,7 @@ def user_change(user_data):
             for user_info in id:
                 if user_input == id[0]:
                         print()
-                        print(id)
+                        print(f"ID : {id[0]} | First Name : {id[1]} | Second Name: {id[2]} | Tel : {id[3]} | E-mail: {id[4]} | Adress : {id[5]}")
                         user_input = chg_menu()
                         if user_input == '1':
                             os.system('cs||clear')
