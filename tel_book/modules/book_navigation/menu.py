@@ -8,6 +8,7 @@ from modules.user_operations.user_chg import *
 from modules.data_operations.add_data_CSV import *
 from modules.data_operations.data_op_menu import *
 from modules.data_operations.data_load import *
+from modules.data_operations.data_clear import *
 
 def menu(user_data):
     os.system('cs||clear')
@@ -30,6 +31,8 @@ def menu(user_data):
     print() 
     print("(6) Импортировать данные")
     print() 
+    print("(7) Удалить данные")
+    print()    
     print("(9) Закрыть справочник")
     print()
     print('----------------------------------')
@@ -52,6 +55,9 @@ def menu(user_data):
         return menu(user_data)
     if user_input == 6:
         user_data = load_data_from()
+        return menu(user_data)
+    if user_input == 7:
+        user_data = remove_all_data(user_data)
         return menu(user_data)
     if user_input == 9:
         close_phonebook()
