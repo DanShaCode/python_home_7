@@ -11,6 +11,6 @@ def user_show(user_data):
     os.system('cs||clear')
     print()
     for user in user_data:
-        print(f"ID : {user[0]} | First Name : {user[1]} | Second Name: {user[2]} | Tel : {user[3]} | E-mail: {user[4]} | Adress : {user[5]}")
+        print(f"ID : {user[0]} | FIRST NAME : {user[1]} | SECOND NAME: {user[2]} | TEL : {user[3]} | E-MAIL: {user[4]} | ADRESS : {user[5]}")
     print()
     menu_return = input("Нажмите Enter ")

@@ -32,7 +32,7 @@ def new_user_data(user_data):
     user_info.append(user_mail)
     print()
 
-    user_adress = input("Введите адрес: ")
+    user_adress = input("Введите Адрес: ")
     user_info.append(user_adress)
     print()
 
