@@ -25,7 +25,8 @@ def user_change(user_data):
                             change = str(input("Введите новое Имя: "))
                             print()
                             print("Изменения сохранены")
-                            time.sleep(1)
+                            print()
+                            user_await = input("Нажмите Enter")
                             id[1] = change
                             print()
                             return user_data
@@ -35,7 +36,8 @@ def user_change(user_data):
                             change = str(input("Введите новую Фамилию: "))
                             print()
                             print("Изменения сохранены")
-                            time.sleep(1)                           
+                            print()
+                            user_await = input("Нажмите Enter")                           
                             id[2] = change
                             return user_data
                         if user_input == '3':
@@ -44,7 +46,8 @@ def user_change(user_data):
                             change = str(input("Введите новый Телефон: "))
                             print()
                             print("Изменения сохранены")
-                            time.sleep(1)
+                            print()
+                            user_await = input("Нажмите Enter")
                             id[3] = change
                             return user_data
                         if user_input == '4':
@@ -52,7 +55,8 @@ def user_change(user_data):
                             change = str(input("Введите новый e-mail: "))
                             print()
                             print("Изменения сохранены")
-                            time.sleep(1)
+                            print()
+                            user_await = input("Нажмите Enter")
                             id[4] = change
                             return user_data
                         if user_input == '5':
@@ -60,14 +64,16 @@ def user_change(user_data):
                             change = str(input("Введите новый Адрес: "))
                             print()
                             print("Изменения сохранены")
-                            time.sleep(1)
+                            print()
+                            user_await = input("Нажмите Enter")
                             id[5] = change
                             return user_data
                         if user_input == '6':
                             os.system('cs||clear')
                             print()
                             print("Контакт удален")
-                            time.sleep(1)
+                            print()
+                            user_await = input("Нажмите Enter")
                             user_data.remove(id)
                             return user_data   
                         if user_input == 'q':
