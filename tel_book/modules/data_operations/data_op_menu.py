@@ -10,9 +10,9 @@ from modules.data_operations.add_data_CSV import *
 def operations_menu(user_data):
     os.system('cs||clear')
     print()
-    print("(1) Импортировать данные в CSV")
+    print("(1) Экспортировать данные в CSV")
     print()
-    print("(2) Импортировать данные в TXT")
+    print("(2) Экспортировать данные в TXT")
     print()
     user_input = int(input("Введите соответствующую цифру из Меню: "))
     if user_input == 1:

@@ -5,6 +5,7 @@ from modules.user_operations.new_user import *
 from modules.user_operations.find_user import *
 from modules.user_operations.show_users import *
 from modules.data_operations.add_data_CSV import *
+from modules.data_operations.data_load import *
 
 os.system('cs||clear')
 

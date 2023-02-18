@@ -28,7 +28,7 @@ def create_book_csv(user_data):
                 )
         os.system('cs||clear')
         print()
-        print("Данные загружены.")
+        print("Данные выгружены.")
         print()
         clear = input("Нажмите Enter ")
         os.system('cs||clear')

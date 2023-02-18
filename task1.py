@@ -1,4 +1,5 @@
 import os
+import time
 
 # 1. В списке хранятся числа. Нужно выбрать только чётные числа и составить
 # список пар (число; квадрат числа).
@@ -220,3 +221,26 @@ import os
 # res = list(filter(lambda x: x % 10 == 5, data))
 
 # print(res)
+
+
+# string = '1;a;a;a;a;a;'
+
+# for char in string:
+#     if char == ';':
+#         string = string.replace(';', '')
+#     else:
+#         continue
+
+# string = list(string)
+
+# print()
+# print(string)
+
+# ===============================================================
+
+import csv
+
+with open('phone_book.csv', 'r', encoding='UTF-8') as f:
+    data = csv.reader(f, delimiter=';')
+    for row in data:
+        print(row)
